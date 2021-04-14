@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*==================== Variables ====================*/
+:root {
+    --primary-dark: #c98ad6;
+    --primary-main: #f2b8ff;
+    --primary-light: #fce1ff;
+    --secondary-dark: #0e0836;
+    --secondary-main: #261250;
+    --secondary-light: #481f64;
+}
+
+/*==================== Classes ====================*/
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-divider {
+    width: 32%;
+    height: 1px;
+    margin: 1.5rem auto;
+    background-color: var(--primary-main);
+}
+
+.button {
+    padding: 0.8em 1.6em;
+    border: 1px solid var(--primary-main);
+    border-radius: 1.5em;
+    color: var(--secondary-main);
+    background-color: var(--primary-main);
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    color: var(--primary-main);
+    background-color: transparent;
+}
+
+.link {
+    color: var(--primary-main);
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: var(--primary-dark);
+}
+
+/*==================== Body ====================*/
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: var(--primary-main);
+    background: linear-gradient(25deg, var(--secondary-main) 75%, var(--secondary-light));
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    width: calc(100% - 20%);
+    padding: 5% 10%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0 2rem 0;
+    color: var(--primary-dark);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*==================== Nav ====================*/
+#nav {
+    padding: 2.5% 5% 0 5%;
+    justify-content: space-between;
+}
+
+#nav img {
+    padding-top: 15%;
+    width: 7rem;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+#nav .material-icons {
+    display: none;
+    font-size: 2em;
+}
+
+/*==================== Intro ====================*/
+#intro {
+    position: relative;
+    height: 60vw;
+    min-height: 700px;
+    max-height: 1200px;
+    padding: 10% 15% 10% 5%;
+    background-image: url('../images/intro-desktop.svg');
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#intro p {
+    max-width: 30rem;
+}
+
+/*==================== Sign up ====================*/
+#sign-up {
+    flex-direction: row-reverse;
+    background-color: var(--secondary-main);
+}
+
+#sign-up div {
+    max-width: 24rem;
+}
+
+#sign-up form {
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    background-color: var(--secondary-dark);
+}
+
+#sign-up input[type="text"],
+#sign-up input[type="password"] {
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    outline: none;
+    color: var(--secondary-dark);
+}
+
+#sign-up input[type="submit"] {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*==================== Why Cloud ====================*/
+#why-cloud {
+    flex-flow: column wrap;
+    padding-bottom: 10%;
+    background: var(--secondary-main);
+    background-image: url('../images/divider01.svg'), linear-gradient(180deg, var(--secondary-main), var(--secondary-dark));
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#why-cloud h1 {
+    margin-bottom: 1rem;
+}
+
+#why-cloud img {
+    width: 10rem;
+    margin: 0 1rem;
+}
+
+#why-cloud p {
+    max-width: 24em;
+}
+
+#why-cloud .container:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+/*==================== Outro ====================*/
+#outro {
+    flex-flow: column wrap;
+    padding-bottom: 10%;
+    background: var(--secondary-light);
+    background-image: url('../images/divider02.svg'), linear-gradient(180deg, var(--secondary-light), var(--secondary-main));;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+}
+
+#outro img {
+    width: 16rem;
+}
+
+#outro p {
+    color: var(--primary-light);
+}
+
+#outro h1 {
+    margin-bottom: 0.5rem;
+}
+
+/*==================== Footer ====================*/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 5%;
+    background: linear-gradient(180deg, var(--secondary-dark), var(--secondary-main));
+    font-size: 0.8rem;
+}
+
+footer li {
+    margin: 0.5rem 0;
+}
+
+footer img {
+    width: 6rem;
+}
+
+footer p {
+    max-width: 12rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+@media screen and (min-width: 1600px) {
+    #why-cloud {
+        flex-flow: row wrap;
+    }
+
+    #why-cloud h1 {
+        width: 100%;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    #why-cloud .container,
+    #why-cloud .container:nth-of-type(2) {
+        flex-direction: column;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background: linear-gradient(25deg, var(--secondary-main) 80%, var(--secondary-light));
+    }
+    
+    #intro {
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav {
+        padding: 5% 10% 0 10%;
+    }
+
+    #nav .material-icons {
+        display: block;
+    }
+
+    #nav ul {
+        width: 100%;
+        display: none;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    #nav li {
+        margin: 0;
+    }
+
+    #intro {
+        height: 90vh;
+        padding: 10%;
+        background-image: url('../images/intro-mobile.svg');
+    }
+
+    #sign-up form {
+        width: 80%;
+        margin: 0;
+    }
+    
+    #sign-up input[type="text"],
+    #sign-up input[type="password"] {
+        width: calc(100% - 2rem);
+    }
+
+    footer {
+        position: relative;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 25% 15% 10% 15%;
+    }
+
+    footer img {
+        position: absolute;
+        top: 10%;
+        left: calc(50% - 3rem);
+    }
+
+    footer div {
+        margin: 1.5rem 0;
+    }
+}

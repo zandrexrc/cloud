@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <title>cloud</title>
+        <link rel="icon" type="image/png" href="static/images/favicon.svg"/>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav" class="container">
+            <a href="#">
+                <img src="static/images/logo.svg" />
+            </a>
+            <i class="material-icons" onclick="toggleNav()">menu</i>
+            <ul>
+                <li><a class="link" href="#">About</a></li>
+                <li><a class="link" href="#why-cloud">Why CLOUD?</a></li>
+                <li><a class="link" href="#sign-up">Sign up</a></li>
+            </ul>
+        </div>
+
+        <section id="intro">
+            <h1>The real Cloud storage</h1>
+            <p>
+                Store your stuff on an actual cloud. Whether you're moving to a 
+                new home or you just want more free space in your room, our 
+                cloud storage services are tailored to your needs.
+            </p>
+            <a class="button" href="#">Learn more</a>
+        </section>
+
+        <section id="sign-up" class="container">
+            <div>
+                <h1>Save your data in the clouds</h1>
+                <p>
+                    Create your own account now and get a free permanent 
+                    1m<sup>3</sup> of CLOUD storage. <br>
+                    Become a member of <i>CLOUD+</i> to get your own 
+                    isolated cloud island plus other exciting benefits.
+                </p>
+            </div>
+            <form class="container">
+                <label for="form-email">Email</label>
+                <input type="text" id="form-email" name="form-email">
+                <label for="form-password">Password</label>
+                <input type="password" id="form-password" name="form-password">
+                <input type="submit" class="button" value="Sign up">
+            </form>
+        </section>
+
+        <section id="why-cloud" class="container">
+            <h1>Why CLOUD?</h1>
+            <div class="container">
+                <img src="static/images/cloud-smart.svg" />
+                <div>
+                    <h3>Smart</h3>
+                    <p>
+                        All of our clouds are artificially grown in a lab, and 
+                        designed with special technologies that make them more 
+                        suitable for storage purposes than land-based storage 
+                        facilities. Each cloud is self-driving, self-sufficient, 
+                        and capable of high-speed troposphere-to-ground 
+                        transportation for delivering and fetching items.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="static/images/cloud-safe.svg" />
+                <div>
+                    <h3>Safe</h3>
+                    <p>
+                        Our cloud clusters are safely hidden amongst natural 
+                        clouds. Using the latest <i>ZeusSleep<sup>TM</sup></i> 
+                        technology, our clouds are unable to produce lightning. 
+                        Your items are securely locked in air-tight, waterproof, 
+                        temperature-controlled containers. Each cloud is also 
+                        equipped with a number of security devices to prevent 
+                        trespassing and cloud-hijacking.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="static/images/cloud-sustainable.svg" />
+                <div>
+                    <h3>Sustainable</h3>
+                    <p>
+                        Our artificial clouds are largely composed of hydrogen, 
+                        helium, and oxygen. They are self-sustaining and produce 
+                        no harmful emissions. Like normal clouds, our clouds 
+                        also have natural lifecycles. They take six months to 
+                        dissipate, but rest assured that once your cloud nears 
+                        the end of its lifecycle, your items will be safely 
+                        transferred to a new cloud. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="outro" class="container">
+            <img src="static/images/whoosh.svg" />
+            <p>
+                Something flew right over your head? Check the 
+                <a class="link" href="">FAQs</a> or 
+                <a class="link" href="">send us an email</a>.
+            </p>
+            <div class="line-divider"></div>
+            <h3>Start using CLOUD now</h3>
+            <a class="button" href="#sign-up">Sign up</a>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a class="link" href="#">Main page</a></li>
+                <li><a class="link" href="#">About</a></li>
+                <li><a class="link" href="#why-cloud">Why CLOUD?</a></li>
+                <li><a class="link" href="#">Support</a></li>
+                <li><a class="link" href="#">Log in</a></li>
+                <li><a class="link" href="#sign-up">Sign up</a></li>
+            </ul>
+            <div>
+                <img src="static/images/logo.svg" />
+                <p>
+                    1986 Nibelheim <br>
+                    Nibel Area, Western Gaia <br><br>
+                    <a class="link" href="https://en.wikipedia.org/wiki/Cloud_Strife">cloudstrife@cloud.cl</a>
+                    <br><br>
+                    +1-202-555-0187
+                </p>
+            </div>
+            <p>
+                This mock website is designed by 
+                <a class="link" href="https://zandrexrc.me">Zandrex Camagon</a>. 
+                <br><br>
+                &#169; 2021. All rights reserved.
+            </p>
+        </footer>
+
+        <script type="text/javascript">
+            function toggleNav() {
+                const navLinks = document.querySelector('#nav ul');
+                const navButton = document.querySelector('#nav i');
+
+                if (navLinks.style.display != 'flex') {
+                    navLinks.style.display = 'flex';
+                    navButton.innerHTML = 'close';
+                } else {
+                    navLinks.style.display = 'none';
+                    navButton.innerHTML = 'menu';
+                }
+            }
+        </script>
+    </body>
+</html>
